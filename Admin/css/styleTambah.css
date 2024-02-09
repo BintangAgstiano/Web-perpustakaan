@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;0,800;1,600;1,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Nunito:ital,wght@1,400;1,500&family=Overpass&family=Poppins:ital,wght@0,600;0,700;0,800;1,300;1,600;1,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Nunito:ital,wght@1,400;1,500&family=Poppins:ital,wght@0,600;0,700;0,800;1,300;1,600;1,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,400;1,500&family=Poppins:ital,wght@0,600;0,700;0,800;1,300;1,600;1,800&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* bagian1 */
+.container {
+    width: 100%;
+    height: 100vh;
+  background-image: url(../assets/bgLibrabry.jpg);
+  background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    flex-direction: column;
+    background-color: #fff;
+    padding: 2%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.219);
+}
+
+.nav-form {
+    width: 100%;
+    height: 8vh;
+    background-color: rgba(20, 21, 48, 0.918);
+    border-radius: 5px;
+    text-align: center;
+    font-family: poppins;
+    font-size: 1.3rem;
+    color: white;
+    line-height: 8vh;
+}
+
+.contentForm {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 4%;
+    flex-direction: column;
+    margin-bottom: 4%;
+}
+
+.inputText {
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.inputFile {
+    width: 100%;
+    font-size: 1.2rem;
+    margin-top: 3%;
+}
+
+.inputText .text,
+.inputFile .text {
+    font-family: poppins;
+    color: rgba(0, 0, 0, 0.836);
+}
+
+.inputText input {
+    width: 100%;
+    padding: 10px 3px;
+    border-radius: 5px;
+    border: 3px solid #39355fc5;
+    font-size: 1rem;
+    padding-left: 1%;
+    cursor: pointer;
+    outline: none;
+}
+
+#img {
+    width: 100%;
+}
+
+input::file-selector-button {
+    padding: 10px 0;
+    width: 100%;
+    display: block;
+    border: 3px solid #39355fc5;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#btn-add {
+    width: 100%;
+    background-color: #39355f;
+    color: white;
+    font-family: poppins;
+    font-size: 1rem;
+    padding: 8px 0;
+    border: none;
+    border-radius: 5px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+
+/* bg2 */
+.bg2{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.219);
+    width: 20%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+.bg2 img{
+ width: 80%;
+ margin-top: 8%;
+
+}
+.bg2 p{
+    font-family: poppins;
+    margin-top: 2%;
+}

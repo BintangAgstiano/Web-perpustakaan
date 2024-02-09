@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Nunito:ital,wght@1,400;1,500&family=Overpass&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,600;1,800&family=Roboto:wght@400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    /* background-color: #e2e2e2; */
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    position: relative;
+}
+
+.form input {
+    outline: none;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: white;
+    width: 100%;
+    padding: 15px 10px;
+    margin-top: 3%;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 13px 0;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    margin-top: 8%;
+    cursor: pointer;
+}
+
+.judul {
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 3rem;
+    color: #333333;
+    margin-bottom: 3%;
+}
+
+.bio {
+    font-family: poppins;
+    font-weight: 500;
+    color: #252525;
+    margin-top: 7%;
+}
+
+.bio a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+
+}
+.parent-mb{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+    visibility: hidden;
+    opacity: 0;
+    transition: .7s;
+}
+.message-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 30vh;
+   position: relative;
+   margin: auto;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,.5);
+    border-radius: 3px;
+}
+nav{
+   position: absolute;
+   top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    align-items: center;
+    width: 100%;
+    height: 8vh !important;
+    height: max-content;
+    background-color: rgb(138, 4, 4);
+    
+}
+.judul-nav{
+    font-family: poppins;
+    color: white;
+    font-size: 1rem;
+}
+.x{
+    font-family: sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.text-content{
+    margin-top: 25px;
+    font-family: poppins;
+}
+.oke{
+    padding: 8px 40px;
+    width: max-content;
+    border: none;
+    background-color: rgb(51, 19, 19);
+    color: white;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+    cursor: pointer;
+}
+.parentCb{
+    width: 100%;
+    padding-top: 1%;
+}
+.contentCb{
+    display: flex;
+    position: absolute;
+    left: 0;
+}
+#cb{
+    transform: scale(1.4);
+    position: relative;
+    left: 5%;
+}
+#showPassword{
+    width: 1000%;
+    font-family: poppins;
+    position: relative;
+    left: 10%;
+    padding-top: 3%;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .message-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 60%;
+        height: 20vh;
+       position: relative;
+       margin: auto;
+        overflow: hidden;
+        background-color: #fff;
+        box-shadow: 0 0 10px 1px rgba(0,0,0,.5);
+        border-radius: 3px;
+    }
+    nav{
+        position: absolute;
+        top: 0;
+         display: flex;
+         justify-content: space-between;
+         padding: 0 15px;
+         align-items: center;
+         width: 100%;
+         height: 8vh !important;
+         height: 5vh !important;
+         background-color: rgb(138, 4, 4);
+       
+     }
+     .judul-nav{
+        font-size: 1.8rem;
+     }
+     .x{
+        font-family: sans-serif;
+        color: white;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    .text-content{
+        margin-top: 25px;
+        font-family: poppins;
+        font-size: 1.3rem;
+    }
+    .oke{
+        padding: 8px 60px;
+        width: max-content;
+        border: none;
+        background-color: rgb(51, 19, 19);
+        color: white;
+        border-radius: 3px;
+        position: absolute;
+        bottom: 8%;
+        right: 5%;
+        cursor: pointer;
+        font-size: 1.2rem;
+    }
+} 
+
+
+@media only screen and (max-width: 767px) {
+    .form input {
+        outline: none;
+        border: 1px solid rgb(255, 255, 255);
+        background-color: white;
+        width: 100%;
+        padding: 15px 10px;
+        margin-top: 5%;
+        border-radius: 5px;
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+    }
+    .message-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        height: 23vh;
+       position: relative;
+       margin: auto;
+        overflow: hidden;
+        background-color: #fff;
+        box-shadow: 0 0 10px 1px rgba(0,0,0,.5);
+        border-radius: 3px;
+    }
+    nav{
+        position: absolute;
+        top: 0;
+         display: flex;
+         justify-content: space-between;
+         padding: 0 15px;
+         align-items: center;
+         width: 100%;
+         height: 8vh !important;
+         height: 6vh !important;
+         background-color: rgb(138, 4, 4);
+       
+     }
+     .judul-nav{
+        font-size: 1.3rem;
+     }
+     .x{
+        font-family: sans-serif;
+        color: white;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+    .text-content{
+        margin-top: 25px;
+        font-family: poppins;
+        font-size: .9rem;
+    }
+    .oke{
+        padding: 3px 40px;
+        width: max-content;
+        border: none;
+        background-color: rgb(51, 19, 19);
+        color: white;
+        border-radius: 3px;
+        position: absolute;
+        bottom: 8%;
+        right: 5%;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+}
